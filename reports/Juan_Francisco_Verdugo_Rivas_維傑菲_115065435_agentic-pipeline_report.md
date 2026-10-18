@@ -1,8 +1,4 @@
-# Your report
-
-*(Replace this with your own report: 3-5 short paragraphs. For each major step you actually ran, loading the data, filtering, pattern mining, dimension reduction, whatever applies, say what you did, reference the specific `result_id` and/or saved plot, and explain what it shows. Delete this instruction text before submitting.)*
-
-Report on Agentic Pipeline
+# Report on agentic pipeline
 
 This report covers the process of appplying the 18 tools created in the AgenticDev Workbook to the 20 Newsgroups data set.
 
@@ -18,7 +14,7 @@ In the next step, the build_dtm_tool was used to create the document-term matrix
 
 For visualizing the frequency, the dtm_heatmap_tool was used. First, it retrieved a graph with a lot of 0s that did not communicate useful information. The problem was that it was build without the possibility to order first the the terms by frequency. After modifying the tool, it was instructed to build the heatmap but first to sort the terms in descending order by frequency.
 
-![Heatmap graph without sorting terms](../plots/Juan_Francisco_Verdugo_Rivas_維傑菲_agentic-pipeline_plot_dtm_heatmap_9.png)
+![Heatmap graph without sorting terms](/plots/Juan_Francisco_Verdugo_Rivas_維傑菲_agentic-pipeline_plot_dtm_heatmap_9.png)
 ![Heatmap graph after sorting terms](../plots/Juan_Francisco_Verdugo_Rivas_維傑菲_agentic-pipeline_plot_dtm_heatmap_10.png)
 
 After this process, the three tools for filtering were used. These are the reults from each tool:
