@@ -14,7 +14,8 @@ In the next step, the build_dtm_tool was used to create the document-term matrix
 
 For visualizing the frequency, the dtm_heatmap_tool was used. First, it retrieved a graph with a lot of 0s that did not communicate useful information. The problem was that it was build without the possibility to order first the the terms by frequency. After modifying the tool, it was instructed to build the heatmap but first to sort the terms in descending order by frequency.
 
-![Heatmap graph without sorting terms](/plots/Juan_Francisco_Verdugo_Rivas_維傑菲_agentic-pipeline_plot_dtm_heatmap_9.png)
+![Heatmap graph without sorting terms](../plots/heatmap_9.png)
+
 ![Heatmap graph after sorting terms](../plots/Juan_Francisco_Verdugo_Rivas_維傑菲_agentic-pipeline_plot_dtm_heatmap_10.png)
 
 After this process, the three tools for filtering were used. These are the reults from each tool:
@@ -51,6 +52,7 @@ To mine the patterns the mine_patterns_tool was used with these parameters:
 To visualize dimensionality reduction, reduce_dimensions_tool was used using umap method. Then it was done with 2 and 3 dimensions. This tool was created first to only make 2D graphs, it was necessary to return to the development phase so it could handle 3D graphs.
 
 ![Dimensionality reduction 2D](../plots/Juan_Francisco_Verdugo_Rivas_維傑菲_agentic-pipeline_plot_reduce_dim_28.png)
+
 ![Dimensionality reduction 3D](../plots/Juan_Francisco_Verdugo_Rivas_維傑菲_agentic-pipeline_plot_reduce_dim_29.png)
 
 The command binarize_labels_tool was used and the result was stored in binarize_labels_30. Then it was used inspect_data_tool with a random seed of 42 to retrieve 5 random documents. Cosine_similarity_tool was used with two of the random documents obtained (index 440 and index 1360) which where from the soc.religion.christian category. The cosine similarity was 0.
